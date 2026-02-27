@@ -2,6 +2,7 @@
 /**
  * Single Event template (plugin).
  */
+
 get_header();
 
 while ( have_posts() ) :
