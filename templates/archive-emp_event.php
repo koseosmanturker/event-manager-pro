@@ -10,7 +10,6 @@ get_header();
 
 	<div style="margin:15px 0;">
 		<?php
-		// Re-use shortcode (filter form + listing)
 		if ( shortcode_exists( 'events' ) ) {
 			echo do_shortcode( '[events limit="20"]' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}

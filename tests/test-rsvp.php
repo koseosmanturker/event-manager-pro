@@ -11,7 +11,6 @@ class Test_EMP_RSVP extends WP_UnitTestCase {
 			)
 		);
 
-		// First RSVP
 		$rsvps = array(
 			array(
 				'name'  => 'User A',
@@ -21,7 +20,6 @@ class Test_EMP_RSVP extends WP_UnitTestCase {
 		);
 		update_post_meta( $event_id, '_emp_rsvps', $rsvps );
 
-		// Try to add the same email again (simulate duplicate check)
 		$rsvps_loaded = get_post_meta( $event_id, '_emp_rsvps', true );
 		$this->assertIsArray( $rsvps_loaded );
 		$this->assertCount( 1, $rsvps_loaded );

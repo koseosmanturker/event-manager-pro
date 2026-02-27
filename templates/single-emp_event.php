@@ -43,7 +43,6 @@ while ( have_posts() ) :
 			</div>
 
 			<?php
-			// RSVP form (re-use your function)
 			if ( function_exists( 'emp_render_rsvp_form' ) ) {
 				echo emp_render_rsvp_form( get_the_ID() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
