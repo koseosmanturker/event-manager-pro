@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name:     Event Manager Pro
- * Plugin URI:      PLUGIN SITE HERE
- * Description:     PLUGIN DESCRIPTION HERE
- * Author:          YOUR NAME HERE
- * Author URI:      YOUR SITE HERE
+ * Plugin URI:      https://github.com/koseosmanturker/event-manager-pro
+ * Description:     Custom event management plugin with CPT, taxonomy, RSVP system, REST API and email notifications.
+ * Author:          Osman Türker Köse
+ * Author URI:      https://github.com/koseosmanturker
  * Text Domain:     event-manager-pro
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         1.0.0
  *
  * @package         Event_Manager_Pro
  */
