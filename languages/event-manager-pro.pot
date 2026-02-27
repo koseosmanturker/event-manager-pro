@@ -1,0 +1,271 @@
+# Copyright (C) 2026 YOUR NAME HERE
+# This file is distributed under the same license as the Event Manager Pro plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Event Manager Pro 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/event-manager-pro\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-02-27T02:45:45+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: event-manager-pro\n"
+
+#. Plugin Name of the plugin
+#: event-manager-pro.php
+msgid "Event Manager Pro"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: event-manager-pro.php
+msgid "PLUGIN SITE HERE"
+msgstr ""
+
+#. Description of the plugin
+#: event-manager-pro.php
+msgid "PLUGIN DESCRIPTION HERE"
+msgstr ""
+
+#. Author of the plugin
+#: event-manager-pro.php
+msgid "YOUR NAME HERE"
+msgstr ""
+
+#. Author URI of the plugin
+#: event-manager-pro.php
+msgid "YOUR SITE HERE"
+msgstr ""
+
+#: event-manager-pro.php:18
+#: event-manager-pro.php:20
+#: templates/archive-emp_event.php:9
+msgid "Events"
+msgstr ""
+
+#: event-manager-pro.php:19
+#: event-manager-pro.php:21
+msgid "Event"
+msgstr ""
+
+#: event-manager-pro.php:22
+msgid "Add New"
+msgstr ""
+
+#: event-manager-pro.php:23
+msgid "Add New Event"
+msgstr ""
+
+#: event-manager-pro.php:24
+msgid "New Event"
+msgstr ""
+
+#: event-manager-pro.php:25
+msgid "Edit Event"
+msgstr ""
+
+#: event-manager-pro.php:26
+msgid "View Event"
+msgstr ""
+
+#: event-manager-pro.php:27
+msgid "All Events"
+msgstr ""
+
+#: event-manager-pro.php:28
+msgid "Search Events"
+msgstr ""
+
+#: event-manager-pro.php:29
+#: event-manager-pro.php:398
+msgid "No events found."
+msgstr ""
+
+#: event-manager-pro.php:30
+msgid "No events found in Trash."
+msgstr ""
+
+#: event-manager-pro.php:52
+#: event-manager-pro.php:60
+msgid "Event Types"
+msgstr ""
+
+#: event-manager-pro.php:53
+msgid "Event Type"
+msgstr ""
+
+#: event-manager-pro.php:54
+msgid "Search Event Types"
+msgstr ""
+
+#: event-manager-pro.php:55
+msgid "All Event Types"
+msgstr ""
+
+#: event-manager-pro.php:56
+msgid "Edit Event Type"
+msgstr ""
+
+#: event-manager-pro.php:57
+msgid "Update Event Type"
+msgstr ""
+
+#: event-manager-pro.php:58
+msgid "Add New Event Type"
+msgstr ""
+
+#: event-manager-pro.php:59
+msgid "New Event Type Name"
+msgstr ""
+
+#: event-manager-pro.php:82
+msgid "Event Details"
+msgstr ""
+
+#: event-manager-pro.php:103
+#: event-manager-pro.php:182
+msgid "Event Date"
+msgstr ""
+
+#: event-manager-pro.php:113
+#: event-manager-pro.php:183
+msgid "Location"
+msgstr ""
+
+#: event-manager-pro.php:120
+msgid "e.g., Istanbul"
+msgstr ""
+
+#: event-manager-pro.php:217
+#: templates/single-emp_event.php:20
+msgid "Event Date:"
+msgstr ""
+
+#: event-manager-pro.php:221
+#: templates/single-emp_event.php:24
+msgid "Location:"
+msgstr ""
+
+#: event-manager-pro.php:346
+msgid "Type"
+msgstr ""
+
+#: event-manager-pro.php:348
+msgid "All"
+msgstr ""
+
+#: event-manager-pro.php:359
+msgid "From"
+msgstr ""
+
+#: event-manager-pro.php:362
+msgid "To"
+msgstr ""
+
+#: event-manager-pro.php:365
+msgid "Search"
+msgstr ""
+
+#: event-manager-pro.php:366
+msgid "keyword..."
+msgstr ""
+
+#: event-manager-pro.php:368
+msgid "Filter"
+msgstr ""
+
+#: event-manager-pro.php:424
+msgid "Thanks! Your RSVP has been recorded."
+msgstr ""
+
+#: event-manager-pro.php:429
+msgid "RSVP"
+msgstr ""
+
+#: event-manager-pro.php:434
+msgid "Your Name"
+msgstr ""
+
+#: event-manager-pro.php:437
+msgid "Your Email"
+msgstr ""
+
+#: event-manager-pro.php:442
+msgid "Confirm Attendance"
+msgstr ""
+
+#: event-manager-pro.php:515
+#, php-format
+msgid "RSVP confirmed: %s"
+msgstr ""
+
+#: event-manager-pro.php:517
+#, php-format
+msgid ""
+"Hi %s,\n"
+"\n"
+"Your RSVP has been confirmed for: %s\n"
+"\n"
+"Event link: %s\n"
+"\n"
+"Thank you!"
+msgstr ""
+
+#: event-manager-pro.php:526
+#, php-format
+msgid "New RSVP: %s"
+msgstr ""
+
+#: event-manager-pro.php:528
+#, php-format
+msgid ""
+"New RSVP received.\n"
+"\n"
+"Event: %s\n"
+"Name: %s\n"
+"Email: %s\n"
+"\n"
+"Link: %s"
+msgstr ""
+
+#: event-manager-pro.php:553
+#, php-format
+msgid "New Event Published: %s"
+msgstr ""
+
+#: event-manager-pro.php:555
+#, php-format
+msgid ""
+"A new event has been published.\n"
+"\n"
+"Title: %s\n"
+"Link: %s"
+msgstr ""
+
+#: event-manager-pro.php:580
+#, php-format
+msgid "Event Updated: %s"
+msgstr ""
+
+#: event-manager-pro.php:587
+msgid "there"
+msgstr ""
+
+#: event-manager-pro.php:590
+#, php-format
+msgid ""
+"Hi %s,\n"
+"\n"
+"The event you RSVPed to has been updated:\n"
+"\n"
+"%s\n"
+"%s\n"
+"\n"
+"Thanks!"
+msgstr ""
+
+#: templates/single-emp_event.php:28
+msgid "Type:"
+msgstr ""
