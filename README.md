@@ -81,6 +81,7 @@ URL parameters (GET):
 -   `emp_from`
 -   `emp_to`
 -   `emp_s`
+-   `emp_sort`
 
 Example:
 
