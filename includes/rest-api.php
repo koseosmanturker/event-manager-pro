@@ -45,7 +45,7 @@ function emp_register_rest_routes() {
 		array(
 			'methods'             => 'POST',
 			'callback'            => 'emp_rest_rsvp_callback',
-			'permission_callback' => '__return_true', // public RSVP allowed (can tighten later)
+			'permission_callback' => '__return_true', // public RSVP allowed 
 			'args'                => array(
 				'name'  => array(
 					'required'          => true,
