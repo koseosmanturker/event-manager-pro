@@ -150,6 +150,16 @@ Includes:
 
 ------------------------------------------------------------------------
 
+## 7. Homepage Behavior
+
+For convenience, the plugin configures the site homepage (`/`) to display the Events archive.
+
+Instead of showing default blog posts, the homepage automatically loads the `emp_event` custom post type archive. This ensures that visitors immediately see the list of upcoming events.
+
+The standard Events archive URL (`/events/`) remains fully functional.
+
+------------------------------------------------------------------------
+
 # Security Practices
 
 -   Nonce verification for all POST forms
