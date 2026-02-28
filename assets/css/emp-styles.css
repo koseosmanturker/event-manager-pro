@@ -5,11 +5,32 @@
   padding: 0 16px;
 }
 
+.emp-wrap h1{
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 36px;
+  font-weight: 900;
+  position: relative;
+}
+
+.emp-wrap h1::after{
+  content: "";
+  width: 100px;
+  height: 4px;
+  background: #1e73be;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 10px;
+}
+
 .emp-card{
-  background: #fff;
-  border: 1px solid #e8e8e8;
+  /* background: #fff; */
+  background: #8e8e8e;
+  /* border: 1px solid #e8e8e8; */
+  border: 1px solid #000000;
   border-radius: 14px;
   padding: 16px;
+  /* box-shadow: 0 6px 18px rgba(0,0,0,.04); */
   box-shadow: 0 6px 18px rgba(0,0,0,.04);
 }
 
@@ -42,8 +63,8 @@
   align-items: end;
   margin: 16px 0;
   padding: 14px;
-  background: #fff;
-  border: 1px solid #e8e8e8;
+  background: #c5c5c5;
+  border: 1px solid #000000;
   border-radius: 14px;
   box-shadow: 0 6px 18px rgba(0,0,0,.04);
 }
@@ -85,10 +106,10 @@
 }
 
 .emp-item{
-  border: 1px solid #eee;
+  border: 1px solid #000000;
   border-radius: 14px;
   padding: 14px;
-  background: #fff;
+  background: #e3e3e3;
   box-shadow: 0 6px 18px rgba(0,0,0,.03);
 }
 
@@ -119,7 +140,7 @@
   width: 100%;
   max-width: 420px;
   padding: 10px 12px;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #000000;
   border-radius: 10px;
 }
 /* 
@@ -138,8 +159,8 @@
   margin-top: 12px;
   padding: 12px;
   border-radius: 12px;
-  border: 1px solid #b7ebc6;
-  background: #f0fff4;
+  border: 1px solid #69eb8e;
+  background: #90eba8;
 }
 
 @media (max-width: 900px){
@@ -175,7 +196,41 @@
   border-radius: 12px;
   cursor: pointer;
   font-weight: 700;
-  background: #1e73be;
+  background: #0026ff;
+  /* background: #1e73be; */
   color: #fff;
   width: fit-content;
+}
+
+.emp-meta-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 14px 0 18px;
+}
+
+.emp-meta-item{
+  /* border: 1px solid #eee; */
+  border: 1px solid #500807;
+  border-radius: 12px;
+  padding: 12px;
+  /* background: #fff; */
+  background: #c0bdbd;
+}
+
+.emp-meta-k{
+  font-size: 13px;
+  font-weight: 800;
+  opacity: .85;
+  margin-bottom: 6px;
+}
+
+.emp-meta-v{
+  font-size: 15px;
+  font-weight: 700;
+  opacity: .95;
+}
+
+@media (max-width: 900px){
+  .emp-meta-grid{ grid-template-columns: 1fr; }
 }
