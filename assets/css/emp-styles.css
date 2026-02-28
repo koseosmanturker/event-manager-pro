@@ -122,7 +122,7 @@
   border: 1px solid #dcdcdc;
   border-radius: 10px;
 }
-
+/* 
 .emp-rsvp-box button{
   margin-top: 10px;
   padding: 11px 14px;
@@ -132,7 +132,7 @@
   font-weight: 700;
   background: #1e73be;
   color: #fff;
-}
+} */
 
 .emp-rsvp-success{
   margin-top: 12px;
@@ -146,4 +146,36 @@
   .emp-events-filter{
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.emp-rsvp-title{ margin: 0 0 12px; font-size: 18px; font-weight: 800; }
+
+.emp-rsvp-form{
+  display: grid;
+  gap: 12px;
+}
+
+.emp-rsvp-form .emp-field{
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.emp-rsvp-form input{
+  padding: 10px 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  outline: none;
+  max-width: 520px;
+}
+
+.emp-btn{
+  padding: 11px 14px;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  background: #1e73be;
+  color: #fff;
+  width: fit-content;
 }
