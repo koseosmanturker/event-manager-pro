@@ -1,5 +1,4 @@
 <?php
-
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 function emp_render_rsvp_form( $event_id ) {
@@ -13,28 +12,34 @@ function emp_render_rsvp_form( $event_id ) {
 	ob_start();
 
 	if ( 'success' === $success ) {
-		echo '<div class="emp-rsvp-success" style="margin-top:15px;padding:10px;border:1px solid #46b450;">';
+		echo '<div class="emp-rsvp-success">';
 		echo esc_html__( 'Thanks! Your RSVP has been recorded.', 'event-manager-pro' );
 		echo '</div>';
 	}
 
-	echo '<div class="emp-rsvp-box" style="margin-top:20px;padding:15px;border:1px solid #ddd;">';
-	echo '<h3 style="margin-top:0;">' . esc_html__( 'RSVP', 'event-manager-pro' ) . '</h3>';
+	echo '<div class="emp-card emp-rsvp-box">';
+	echo '<h3 class="emp-rsvp-title">' . esc_html__( 'RSVP', 'event-manager-pro' ) . '</h3>';
 
-	echo '<form method="post">';
+	echo '<form method="post" class="emp-rsvp-form">';
 	wp_nonce_field( 'emp_rsvp_action', 'emp_rsvp_nonce' );
 
-	echo '<p><label><strong>' . esc_html__( 'Your Name', 'event-manager-pro' ) . '</strong></label><br>';
-	echo '<input type="text" name="emp_rsvp_name" required style="width:100%;max-width:420px;"></p>';
+	echo '<div class="emp-field">';
+	echo '<label for="emp_rsvp_name"><strong>' . esc_html__( 'Your Name', 'event-manager-pro' ) . '</strong></label>';
+	echo '<input id="emp_rsvp_name" type="text" name="emp_rsvp_name" required>';
+	echo '</div>';
 
-	echo '<p><label><strong>' . esc_html__( 'Your Email', 'event-manager-pro' ) . '</strong></label><br>';
-	echo '<input type="email" name="emp_rsvp_email" required style="width:100%;max-width:420px;"></p>';
+	echo '<div class="emp-field">';
+	echo '<label for="emp_rsvp_email"><strong>' . esc_html__( 'Your Email', 'event-manager-pro' ) . '</strong></label>';
+	echo '<input id="emp_rsvp_email" type="email" name="emp_rsvp_email" required>';
+	echo '</div>';
 
 	echo '<input type="hidden" name="emp_event_id" value="' . esc_attr( $event_id ) . '">';
 
-	echo '<p><button type="submit" name="emp_rsvp_submit" value="1">' . esc_html__( 'Confirm Attendance', 'event-manager-pro' ) . '</button></p>';
-	echo '</form>';
+	echo '<button class="emp-btn" type="submit" name="emp_rsvp_submit" value="1">';
+	echo esc_html__( 'Confirm Attendance', 'event-manager-pro' );
+	echo '</button>';
 
+	echo '</form>';
 	echo '</div>';
 
 	return ob_get_clean();
@@ -74,7 +79,6 @@ function emp_handle_rsvp_submission() {
 	// Prevent duplicates by email
 	foreach ( $rsvps as $r ) {
 		if ( isset( $r['email'] ) && strtolower( $r['email'] ) === strtolower( $email ) ) {
-			// Already RSVP'd - redirect as success to avoid leaking info
 			wp_safe_redirect( add_query_arg( 'emp_rsvp', 'success', get_permalink( $event_id ) ) );
 			exit;
 		}
@@ -89,7 +93,9 @@ function emp_handle_rsvp_submission() {
 	update_post_meta( $event_id, '_emp_rsvps', $rsvps );
 
 	// Send emails
-	emp_send_rsvp_emails( $event_id, $name, $email );
+	if ( function_exists( 'emp_send_rsvp_emails' ) ) {
+		emp_send_rsvp_emails( $event_id, $name, $email );
+	}
 
 	// Redirect (prevents resubmission on refresh)
 	wp_safe_redirect( add_query_arg( 'emp_rsvp', 'success', get_permalink( $event_id ) ) );
